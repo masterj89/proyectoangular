@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700;800&display=swap');
+
+$fondo-color:black;
+$titulo-fuente:impact;
+$titulo-color:red;
+$texto-fuente:arial;
+$hover:purple;
+$image-tam:10px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1{
+    font-style:$titulo-fuente ;
+    color: $titulo-color;
+}
+body{
+    background-color: $fondo-color;
+}
+h3{
+    font-style: $texto-fuente;
+}
+:hover{
+    color: $hover;
+}
+img{
+    size: $image-tam;
+    max-width: 100%;
+    align-items: center;
+}
+.header{
+    background-image: url(imagenes/fondopeliculas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+    .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+    .logo{
+    color: orange;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase; 
+    }
+    label{
+    display: initial;
+    cursor: pointer;
+    display: none;
+    }
+   .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    ul li{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: orange;
+        margin: 10px;
+    }
+    li:hover{
+    color: #272332;
+    }
+    a{
+        font-size: 18px;
+        padding: 20px;
+        color: orange;
+        font-weight: 600;
+        display: block;
+    }
+    a:hover{
+        color: white;
+    }
+}
+}
+}
+.harder-txt{
+    flex-basis: 50px;
+
+    h1{
+        font-size: 60px;
+        color: white;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+    span{
+        color: rgb(255, 102, 0);
+    }
+    p{
+        font-size: 17px;
+        color: white;
+        margin-bottom: 45px;
+    }
+}
+.popular-conteiner{
+    h2{
+    text-align: center;
+    }
+    .popular-content{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .popular-content img{
+        width: 50px;
+    }
+}
+.product-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+
+    img{
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
